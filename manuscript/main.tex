@@ -1,0 +1,86 @@
+\documentclass[10pt,letterpaper]{article}
+\usepackage[top=0.85in,left=2.75in,footskip=0.75in,marginparwidth=2in]{geometry}
+\usepackage{amsmath,amsfonts,bm,booktabs}
+\usepackage[utf8]{inputenc}
+\usepackage{cite}
+\usepackage{algorithm}
+\usepackage[noend]{algpseudocode}
+\usepackage{nameref,hyperref}
+\usepackage[right]{lineno}
+\usepackage{microtype}
+\usepackage{color,url}
+
+\DisableLigatures[f]{encoding = *, family = * }
+\raggedright
+\setlength{\parindent}{0.5cm}
+\textwidth 5.25in 
+\textheight 8.75in
+
+%\usepackage{setspace} 
+%\doublespacing
+
+\usepackage{changepage}
+\usepackage[aboveskip=1pt,labelfont=bf,labelsep=period,singlelinecheck=off]{caption}
+\makeatletter
+\renewcommand{\@biblabel}[1]{\quad#1.}
+\makeatother
+
+\usepackage{lastpage,fancyhdr,graphicx}
+\usepackage{epstopdf}
+\pagestyle{myheadings}
+\pagestyle{fancy}
+\fancyhf{}
+\rfoot{\thepage/\pageref{LastPage}}
+\renewcommand{\footrule}{\hrule height 2pt \vspace{2mm}}
+\fancyheadoffset[L]{2.25in}
+\fancyfootoffset[L]{2.25in}
+
+\usepackage{graphicx}
+\usepackage{sidecap}
+\usepackage{wrapfig}
+\usepackage[pscoord]{eso-pic}
+\usepackage[fulladjust]{marginnote}
+\reversemarginpar
+
+\begin{document}
+\vspace*{0.35in}
+
+\begin{flushleft}
+{\Large
+\textbf\newline{You paper title}
+\newline
+authors go here:
+\\
+your name\textsuperscript{1*},
+your advisor's name\textsuperscript{1},
+\\
+\bigskip
+\bf{1} the place you work
+\\
+\bf{2} the other place your work
+
+\bigskip
+* correseponding@author.mail
+}
+\end{flushleft}
+
+\section*{Abstract}
+abstract 
+
+\linenumbers
+
+% the * after section prevents numbering
+\section{Introduction}
+\section{Results}
+\section{Discussion}
+\section{Methods and Materials}
+
+
+\nolinenumbers
+\bibliography{reference}
+
+\bibliographystyle{abbrv}
+
+\end{document}
+
+\grid

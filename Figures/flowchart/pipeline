@@ -1,0 +1,18 @@
+// The Round Table
+digraph {
+	node [shape=box]
+	D [label=Data shape=box]
+	P [label=Packages shape=box]
+	S [label=Scripts shape=box]
+	D -> S
+	P -> S
+	F [label="individual figures" shape=box]
+	V [label=Videos shape=box]
+	S -> F
+	S -> V
+	SF [label="publication-quality figures (Latex/AI)" shape=box]
+	F -> SF
+	M [label="Manuscript (Latex/MS Word)" shape=box]
+	SF -> M
+	V -> M
+}
