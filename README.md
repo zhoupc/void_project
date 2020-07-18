@@ -41,7 +41,10 @@ Briefly, we save all the **data** and the **packages** used in this project, and
    - Figs: figures to be inserted. These figures should correspond to the upper level folder **Figures**. You we create links for binding them together. The reason that we don't put them into the same folder is that we want to keep this **Figs** folder clean. We only put things there when we need them. 
   
 ## An ideal example of reproduce research 
-
+0. create a project folder 
+   ```matlab
+   >> start_new_project(project_name, folder); 
+   ``` 
 1. configure package paths
 2. reproduce all figures 
    ```
